@@ -1,28 +1,23 @@
 package domain;
 
 public class Animal {
-
     protected String name;
-
     protected int weight;
 
     public Animal() {
-        name="generic animal";
-        weight=25;
+        System.out.println("Лісова тварина");
     }
 
     public void eat() {
-        System.out.println("Animal eating...");
+        System.out.println(name + " їсть насіння, гриби, фрукти і багато іншого.");
     }
 
     public void speak() {
-        System.out.println("Animal speaking...");
+        System.out.println(name + " видає звук.");
     }
 
     @Override
     public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
+        return "Тварина [ім'я=" + name + ", вага=" + weight + " г]";
     }
-
- 
 }
